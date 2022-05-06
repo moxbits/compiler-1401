@@ -36,9 +36,11 @@ if __name__ == "__main__":
         # doing compilation if the input path is valid
         if exists(input_arg):
             operate_lexing(input_arg) # lexer operations
+        else:
+            print(f"Error: {input_arg} is not a valid file path!!!")
 
     if len(input_arg) > 0:
-        print("\n\nCompiler job is done successfully!!!")
+        print("\n\nCompiler job is done!!!")
     else:
         print("Error: no path arguments passed!!!")
         
