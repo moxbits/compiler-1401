@@ -10,7 +10,7 @@ First you need to have python installed on your machine. if you don't have pytho
  ### Using regular python interpreter
 In order to run mini java compiler you need to install required python packages. For installing required packages you can open project directory inside your operating system command line and use the following command:
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 after that you can use the `compiler.py` script file in the following form:
 ```
