@@ -1,4 +1,4 @@
-# Mini JAVA Compiler
+# Mini C Compiler
 
 ## Description
 
