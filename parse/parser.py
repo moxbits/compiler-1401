@@ -1,12 +1,12 @@
 from sly import Parser
-from lex.lexer import MiniJAVALexer
+from lex.lexer import MiniCLexer
 from utils.logger import SymbolStackLogger
 
 
-# Mini JAVA Parser class
+# Mini C Parser class
 # this class is responsible for parsing the input data based on
 # sly library LALR algorithm
-class MiniJAVAParser(Parser):
+class MiniCParser(Parser):
     # parser constructor
     # it receives the symbol table object and generates it
     # while doing the parsing operations
@@ -15,7 +15,7 @@ class MiniJAVAParser(Parser):
         self.symbolTable = symbolTable
 
     # Get list of defined tokens form our own defined Lexer class
-    tokens = MiniJAVALexer.tokens
+    tokens = MiniCLexer.tokens
 
     # Sets compiler parsing debug file location
     debugfile = 'parser.out'

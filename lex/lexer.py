@@ -4,7 +4,7 @@ from sly import Lexer
 # our defined lexer class based on sly Lexer class
 # this will do all of our lexing operations and
 # all of our tokens are defined here
-class MiniJAVALexer(Lexer):
+class MiniCLexer(Lexer):
     # List of valid tokens
     tokens = {
         # identifiers

@@ -3,10 +3,10 @@ from os.path import exists
 
 from utils.symbolTable import SymbolTable
 
-from lex.lexer import MiniJAVALexer
+from lex.lexer import MiniCLexer
 from lex.generator import generate_tokens_list
 
-from parse.parser import MiniJAVAParser
+from parse.parser import MiniCParser
 from parse.parsetree import parse_tree_generator
 
 from utils.input import get_file_content
@@ -24,10 +24,10 @@ def operate_compilation(file_address: str):
     symbol_table = SymbolTable()
 
     # generating lexer instance
-    lexer = MiniJAVALexer()
+    lexer = MiniCLexer()
 
     # generating parser instance
-    parser = MiniJAVAParser(symbol_table)
+    parser = MiniCParser(symbol_table)
 
     # generating output addresses for symbol table file and all tokens file
     address_component = file_address[:file_address.rindex(".")]

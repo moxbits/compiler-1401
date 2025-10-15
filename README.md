@@ -2,7 +2,7 @@
 
 ## Description
 
-Mini JAVA Compiler is the compiler of a simple mini programming language similar to JAVA programming language. In this project we are going to implement a Lexer and a Parser for this Mini JAVA Compiler.
+Mini C Compiler is the compiler of a simple mini programming language similar to C programming language. In this project we are going to implement a Lexer and a Parser for this Mini C Compiler.
 
 Currently, only lexer and parser sections are implemented and it will generate four different output files for each input file: one for symbol table, one for all of identified tokens, another one for all of parsing steps and symbols stack status on each of those steps and a file containing parse tree data in a python tuple styled nested representation.
 
@@ -12,7 +12,7 @@ First you need to have python installed on your machine. if you don't have pytho
 
 ### Using regular python interpreter
 
-In order to run mini java compiler you need to install required python packages. For installing required packages you can open project directory inside your operating system command line and use the following command:
+In order to run mini C compiler you need to install required python packages. For installing required packages you can open project directory inside your operating system command line and use the following command:
 
 ```
 pip install -r requirements.txt
@@ -48,7 +48,7 @@ Using virtual environment requires you to install it in your machine. Instructio
 For creating a virtual environment in order to run this project head over to this project directory and open it in your system command line and execute the following command:
 
 ```
-python -m venv mini-java-compiler-env
+python -m venv mini-c-compiler-env
 ```
 
 after that you need to activate the created environment
@@ -56,13 +56,13 @@ after that you need to activate the created environment
 #### in linux
 
 ```
-source mini-java-compiler-env/bin/activate
+source mini-c-compiler-env/bin/activate
 ```
 
 #### in windows
 
 ```
-mini-java-compiler-env\Scripts\activate.bat
+mini-c-compiler-env\Scripts\activate.bat
 ```
 
 After activating virtual environment, rest of the running process is exactly the same as using regular python interpreter.
@@ -98,7 +98,7 @@ void main() {
 ```
 WARNING: 81 shift/reduce conflicts
 WARNING: 25 reduce/reduce conflicts
-Parser debugging for MiniJAVAParser written to parser.out
+Parser debugging for MiniCParser written to parser.out
 
 
 All Identified Tokens:
